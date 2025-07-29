@@ -4,6 +4,7 @@ import Register from './components/Register';
 import Home from './components/Home';
 import ProductDetail from './components/ProductDetail';
 import CartInfo from './components/CartInfo';
+import Checkout from './components/Checkout';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/product/:productId" element={<ProductDetail />} />
         <Route path="/cartInfo" element={<CartInfo />} />
+        <Route path="/checkout" element={<Checkout />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
   );

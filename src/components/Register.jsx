@@ -12,12 +12,13 @@ function Register() {
     const username = formData.get('username');
     const email = formData.get('email');
     const password = formData.get('password');
+    const phoneNumber = formData.get('phoneNumber');
 
     try {
       const response = await fetch('http://localhost:3030/api/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, email, password }),
+        body: JSON.stringify({ username, email, password, phoneNumber }),
       });
       const data = await response.json();
       if (response.ok) {
@@ -47,6 +48,10 @@ function Register() {
         <div className="form-group">
           <label>Email</label>
           <input type="email" name="email" required />
+        </div>
+        <div className="form-group">
+          <label>Số điện thoại</label>
+          <input type="text" name="phoneNumber" required />
         </div>
         <div className="form-group">
           <label>Mật khẩu</label>

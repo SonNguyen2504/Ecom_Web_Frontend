@@ -1,0 +1,105 @@
+.feedback-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.feedback-item {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
+
+.feedback-item p {
+  margin: 5px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.feedback-item p strong {
+  color: #007bff;
+}
+
+.feedback-item .feedback-rating {
+  font-weight: bold;
+  color: #f1c40f; /* Vàng cho sao */
+}
+
+.add-feedback {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Căn lề trái */
+}
+
+.add-feedback h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.add-feedback .feedback-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.add-feedback .feedback-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.add-feedback .rating-stars {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.add-feedback .star {
+  font-size: 24px;
+  color: #ccc; /* Xám cho sao không chọn */
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.add-feedback .star.filled {
+  color: #f1c40f; /* Vàng cho sao được chọn */
+}
+
+.add-feedback .star:hover {
+  color: #e67e22; /* Cam nhạt khi hover */
+}
+
+.add-feedback button.add-comment {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-feedback button.add-comment:hover {
+  background-color: #218838;
+}
